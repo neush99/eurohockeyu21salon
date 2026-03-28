@@ -55,8 +55,7 @@
       transition: var(--transition);
     }
     .nav-logo { display: flex; align-items: center; gap: 14px; }
-    /* EuroHockey logo SVG inline */
-    .eh-logo-nav { width: 40px; height: 40px; }
+    .eh-logo-nav { height: 44px; width: auto; object-fit: contain; }
     .nav-logo .logo-text { color: #fff; font-family: 'Montserrat', sans-serif; }
     .nav-logo .logo-text strong { font-size: .95rem; font-weight: 900; display: block; letter-spacing: .03em; }
     .nav-logo .logo-text strong span { color: var(--gold); }
@@ -119,13 +118,17 @@
 
     /* EuroHockey big logo */
     .hero-logo-wrap {
-      display: flex; align-items: center; justify-content: center; gap: 18px;
-      margin-bottom: 28px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 36px;
     }
-    .eh-logo-hero { width: 72px; height: 72px; }
-    .hero-brand {
-      font-family: 'Montserrat', sans-serif; font-weight: 900;
-      font-size: clamp(2rem, 5vw, 3rem); color: var(--gold); letter-spacing: -.02em; line-height: 1;
+    .eh-logo-hero {
+      height: 180px; width: auto; object-fit: contain;
+      filter: drop-shadow(0 0 40px rgba(245,195,0,.3)) drop-shadow(0 4px 16px rgba(0,0,0,.5));
+      animation: logo-glow 3s ease-in-out infinite alternate;
+    }
+    @keyframes logo-glow {
+      from { filter: drop-shadow(0 0 20px rgba(245,195,0,.2)) drop-shadow(0 4px 16px rgba(0,0,0,.5)); }
+      to   { filter: drop-shadow(0 0 50px rgba(245,195,0,.5)) drop-shadow(0 4px 24px rgba(0,0,0,.6)); }
     }
 
     .hero-eyebrow {
@@ -397,12 +400,7 @@
 <!-- NAVBAR -->
 <nav id="navbar">
   <div class="nav-logo">
-    <!-- Logo EuroHockey (SVG inline) -->
-    <svg class="eh-logo-nav" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="100" height="100" rx="16" fill="#F5C300"/>
-      <path d="M25 72 Q25 50 42 42 L55 38 L60 28" stroke="#111" stroke-width="11" stroke-linecap="round" fill="none"/>
-      <path d="M60 28 L68 55" stroke="#111" stroke-width="9" stroke-linecap="round" fill="none"/>
-    </svg>
+    <img class="eh-logo-nav" src="images/logo-eurohockey-noir.png" alt="EuroHockey" />
     <div class="logo-text">
       <strong><span>Euro</span>Hockey</strong>
       <small>U21 Championship II-A Women</small>
@@ -431,14 +429,9 @@
   <div class="shape shape-2"></div>
 
   <div class="hero-content">
-    <!-- Logo EuroHockey grand format -->
+    <!-- Logo EuroHockey grand format (officiel) -->
     <div class="hero-logo-wrap">
-      <svg class="eh-logo-hero" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100" height="100" rx="18" fill="#F5C300"/>
-        <path d="M25 72 Q25 50 42 42 L55 38 L60 28" stroke="#111" stroke-width="11" stroke-linecap="round" fill="none"/>
-        <path d="M60 28 L68 55" stroke="#111" stroke-width="9" stroke-linecap="round" fill="none"/>
-      </svg>
-      <div class="hero-brand">EuroHockey</div>
+      <img class="eh-logo-hero" src="images/logo-eurohockey-noir.png" alt="EuroHockey" />
     </div>
 
     <div class="hero-eyebrow">
