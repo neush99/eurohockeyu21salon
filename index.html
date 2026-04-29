@@ -1015,21 +1015,21 @@
       <div class="divider"></div>
     </div>
     <div class="contact-grid">
-      <div class="contact-card fade-in">
+      <a class="contact-card fade-in" href="mailto:eurohockeyu21.salon@gmail.com" style="display:block; text-decoration:none;">
         <div class="icon">📧</div>
         <h4>Email</h4>
-        <p><a href="mailto:eurohockeyu21.salon@gmail.com">eurohockeyu21.salon@gmail.com</a></p>
-      </div>
+        <p>eurohockeyu21.salon@gmail.com</p>
+      </a>
       <a class="contact-card fade-in" href="https://salonhockeyclub.sportsregions.fr/" target="_blank" rel="noopener" style="display:block; text-decoration:none;">
         <div class="icon">🏒</div>
         <h4 data-fr="Club organisateur" data-en="Organising club">Club organisateur</h4>
         <p data-fr="Salon de Provence Hockey Club" data-en="Salon de Provence Hockey Club">Salon de Provence Hockey Club</p>
       </a>
-      <div class="contact-card fade-in">
+      <a class="contact-card fade-in" href="https://www.eurohockey.org" target="_blank" rel="noopener" style="display:block; text-decoration:none;">
         <div class="icon">🌐</div>
         <h4 data-fr="Fédération" data-en="Federation">Fédération</h4>
-        <p><a href="https://www.eurohockey.org" target="_blank" rel="noopener">EuroHockey (EHF)</a></p>
-      </div>
+        <p>EuroHockey (EHF)</p>
+      </a>
     </div>
   </div>
 </section>
@@ -1216,4 +1216,11 @@
     document.body.style.overflow = '';
   }
   document.addEventListener('keydown', function(e) {
-   
+    if (e.key === 'Escape') {
+      closeLightboxDirect();
+      closeVideoPopup();
+    }
+  });
+</script>
+</body>
+</html>
