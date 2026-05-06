@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#111108"/>
+      <stop offset="100%" style="stop-color:#2a2810"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F5C300"/>
+      <stop offset="100%" style="stop-color:#FFE066"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fond -->
+  <rect width="800" height="420" fill="url(#bg)"/>
+
+  <!-- Grille déco -->
+  <g opacity="0.04" stroke="#F5C300" stroke-width="1">
+    <line x1="0" y1="60" x2="800" y2="60"/>
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="60" y1="0" x2="60" y2="420"/>
+    <line x1="120" y1="0" x2="120" y2="420"/>
+    <line x1="180" y1="0" x2="180" y2="420"/>
+    <line x1="240" y1="0" x2="240" y2="420"/>
+    <line x1="300" y1="0" x2="300" y2="420"/>
+    <line x1="360" y1="0" x2="360" y2="420"/>
+    <line x1="420" y1="0" x2="420" y2="420"/>
+    <line x1="480" y1="0" x2="480" y2="420"/>
+    <line x1="540" y1="0" x2="540" y2="420"/>
+    <line x1="600" y1="0" x2="600" y2="420"/>
+    <line x1="660" y1="0" x2="660" y2="420"/>
+    <line x1="720" y1="0" x2="720" y2="420"/>
+    <line x1="780" y1="0" x2="780" y2="420"/>
+  </g>
+
+  <!-- Cercle déco fond -->
+  <circle cx="680" cy="80" r="200" fill="#F5C300" opacity="0.04"/>
+  <circle cx="100" cy="360" r="140" fill="#F5C300" opacity="0.04"/>
+
+  <!-- Ligne or gauche -->
+  <rect x="0" y="0" width="5" height="420" fill="url(#gold)"/>
+
+  <!-- Icône ticket -->
+  <g filter="url(#glow)">
+    <text x="400" y="145" font-size="72" text-anchor="middle" dominant-baseline="middle">🎟️</text>
+  </g>
+
+  <!-- Badge GRATUIT -->
+  <rect x="310" y="158" width="180" height="30" rx="15" fill="#F5C300"/>
+  <text x="400" y="178" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="800"
+        text-anchor="middle" fill="#111108" letter-spacing="3">GRATUIT</text>
+
+  <!-- Titre principal -->
+  <text x="400" y="230" font-family="Montserrat, Arial, sans-serif" font-size="32" font-weight="900"
+        text-anchor="middle" fill="#ffffff" letter-spacing="-0.5">La billetterie est ouverte !</text>
+
+  <!-- Sous-titre -->
+  <text x="400" y="272" font-family="Montserrat, Arial, sans-serif" font-size="15"
+        text-anchor="middle" fill="rgba(255,255,255,0.55)">Inscription obligatoire · Entrée libre</text>
+
+  <!-- Séparateur -->
+  <rect x="362" y="294" width="76" height="3" rx="2" fill="#F5C300"/>
+
+  <!-- URL -->
+  <text x="400" y="334" font-family="Montserrat, Arial, sans-serif" font-size="13"
+        text-anchor="middle" fill="#F5C300" opacity="0.8">billetterie.eurohockeyu21salon.info</text>
+
+  <!-- Footer bande -->
+  <rect x="0" y="388" width="800" height="32" fill="rgba(245,195,0,0.07)"/>
+  <text x="400" y="409" font-family="Montserrat, Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="rgba(255,255,255,0.3)" letter-spacing="2">EUROHOCKEY U21 · SALON-DE-PROVENCE 2026</text>
+</svg>
