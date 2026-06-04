@@ -16,6 +16,16 @@
 
 window.ACTUS = [
   {
+    id: 2,
+    date: "2026-06-04",
+    titre: "T-Shirt Officiel SHC × Sudist — Précommandez le vôtre !",
+    texte: "Pour célébrer l'EuroHockey Championship U21 Women que nous organisons à Salon-de-Provence du 28 juillet au 1er août, le SHC s'est associé à Sudist, marque locale 100 % fabriquée en Provence. Un t-shirt collector, blanc, avec le design exclusif \"Play and Shine – Salon de Provence July 2026\". Coton bio 220g, confectionné à Saint-Cannat. 35 € / adulte — Tailles S · M · L · XL · XXL. Les précommandes sont retirées sur site pendant la compétition. Un stand de vente sera aussi disponible sur place, mais les stocks seront limités — la précommande est le seul moyen de garantir votre exemplaire !",
+    image: "images/actu-tshirt-mascotte.jpg",
+    lien: "https://salon-hockey-club.sporteasy.net/collections/49090/",
+    lien_label_fr: "Précommander mon t-shirt",
+    lien_label_en: "Pre-order my t-shirt"
+  },
+  {
     id: 1,
     date: "2026-05-06",
     titre: "La billetterie est ouverte !",
